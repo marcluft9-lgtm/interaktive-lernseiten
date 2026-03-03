@@ -253,3 +253,146 @@ nav button.aktiv-tab{color:#fff;border-bottom-color:#7ee8a2;}
         <div class="konten-box vk">
           <h3>Privateinlagen (SKR04 – Habenseite)</h3>
           <p style="font-size:.9rem;line-height:1.8;">
+<!-- ③ PRIVATENTNAHMEN -->
+<div class="seite" id="seite-entnahmen">
+  <div class="container">
+
+    <!-- Einführung -->
+    <div class="card">
+      <div class="card-title">Privatentnahmen – Überblick</div>
+
+      <p style="font-size:.95rem;margin-bottom:1rem;">
+        Privatentnahmen sind <strong>Vermögensentnahmen</strong> des Unternehmers aus dem
+        Betriebsvermögen für private Zwecke. Sie mindern das Eigenkapital und werden über die
+        Privatentnahmekonten (SKR04: 2100 ff.) gebucht.
+      </p>
+
+      <div class="merksatz gruen">
+        Privatentnahmen ≠ Aufwand  
+        → Sie mindern NICHT den Gewinn, sondern ausschließlich das Eigenkapital.  
+        (PDF Kap. 8.4) [1](blob:https://m365.cloud.microsoft/25f18619-5cf9-4d81-8dcc-ba38538d92d0)
+      </div>
+
+      <h3 style="margin-top:1rem;color:#1a4d2e;">Arten von Privatentnahmen:</h3>
+      <ul style="line-height:1.9;font-size:.9rem;padding-left:1.2rem;">
+        <li>💶 <strong>Geldentnahmen</strong></li>
+        <li>📦 <strong>Sachentnahmen</strong> (Waren, Gegenstände)</li>
+        <li>🚜 <strong>Nutzungsentnahmen</strong> (private Nutzung betrieblich angeschaffter Güter)</li>
+        <li>🧑‍🔧 <strong>Leistungsentnahmen</strong> (Personal arbeitet privat)</li>
+      </ul>
+    </div>
+
+
+
+    <!-- GELDENTNAHMEN -->
+    <div class="card">
+      <div class="card-title">8.4.2 Geldentnahmen</div>
+
+      <p style="font-size:.9rem;">
+        Die häufigste Entnahmeart: Der Unternehmer entnimmt Bargeld oder bezahlt private Ausgaben
+        über das betriebliche Bankkonto.  
+        <strong>Geldentnahmen unterliegen nie der Umsatzsteuer.</strong>  
+        (PDF Kap. 8.4.2) [1](blob:https://m365.cloud.microsoft/25f18619-5cf9-4d81-8dcc-ba38538d92d0)
+      </p>
+
+      <h4 style="margin-top:1rem;color:#1a4d2e;">Beispiel:</h4>
+      <p style="font-size:.9rem;">Privatentnahme über 1.000 € vom Bankkonto:</p>
+
+      <table class="buch-table">
+        <tr><th>Soll</th><th>Betrag</th><th>Haben</th></tr>
+        <tr>
+          <td class="soll">Privatentnahmen allgemein 2100</td>
+          <td class="betrag">1.000,00 €</td>
+          <td class="haben">Bank 1800</td>
+        </tr>
+      </table>
+
+      <div class="merksatz">
+        Typische Fälle: Zahlung privater Versicherungen, Steuern, Einkäufe über das Firmenkonto.  
+        (PDF S. 7) [1](blob:https://m365.cloud.microsoft/25f18619-5cf9-4d81-8dcc-ba38538d92d0)
+      </div>
+    </div>
+
+
+
+    <!-- SACHENTNAHMEN -->
+    <div class="card">
+      <div class="card-title">8.4.3 Sachentnahmen (Waren & Gegenstände)</div>
+
+      <p style="font-size:.9rem;margin-bottom:1rem;">
+        Bei Sachentnahmen entnimmt der Unternehmer <strong>Gegenstände des Unternehmens</strong>
+        für private Zwecke.  
+        Beispiele: Lebensmittelhändler entnimmt Waren, Fahrradhändler entnimmt ein Fahrrad.
+      </p>
+
+      <div class="merksatz gruen">
+        Sachentnahmen sind „<strong>unentgeltliche Wertabgaben</strong>“ und unterliegen
+        grundsätzlich der Umsatzsteuer – sofern beim Einkauf Vorsteuerabzug möglich war.  
+        (PDF S. 6–10) [1](blob:https://m365.cloud.microsoft/25f18619-5cf9-4d81-8dcc-ba38538d92d0)
+      </div>
+
+      <h3 style="font-size:1rem;margin-top:1.4rem;">Bewertung der Sachentnahme</h3>
+      <p style="font-size:.9rem;">
+        Die Entnahme wird mit dem <strong>Teilwert</strong> bewertet:  
+        = <strong>Wiederbeschaffungskosten netto</strong> zum Zeitpunkt der Entnahme.  
+        (PDF: Teilwertvermutungen, H 6.7 EStH) [1](blob:https://m365.cloud.microsoft/25f18619-5cf9-4d81-8dcc-ba38538d92d0)
+      </p>
+
+      <h4 style="margin-top:1rem;color:#1a4d2e;">Beispiel aus dem PDF:</h4>
+      <p style="font-size:.9rem;">
+        Ein Computer wurde ursprünglich für 800 € netto gekauft.  
+        Aktuelle Wiederbeschaffungskosten: 850 € netto.  
+        → Entnahmewert = 850 € netto.  
+        (PDF S. 8–9) [1](blob:https://m365.cloud.microsoft/25f18619-5cf9-4d81-8dcc-ba38538d92d0)
+      </p>
+
+      <h4 style="margin-top:1rem;">Buchung (mit USt):</h4>
+
+      <table class="buch-table">
+        <tr><th>Soll</th><th>Betrag</th><th>Haben</th></tr>
+        <tr>
+          <td class="soll">Unentgeltliche Wertabgaben 2130</td>
+          <td class="betrag">850,00 €</td>
+          <td class="haben">Entnahme Waren 4620 (19 % USt)</td>
+        </tr>
+        <tr>
+          <td class="soll">Unentgeltliche Wertabgaben 2130</td>
+          <td class="betrag">161,50 €</td>
+          <td class="haben">Umsatzsteuer 3806</td>
+        </tr>
+      </table>
+
+      <div class="merksatz rot">
+        Wenn beim Einkauf <strong>kein Vorsteuerabzug</strong> möglich war → Sachentnahme <strong>ohne
+        Umsatzsteuer</strong>.  
+        (PDF S. 10) [1](blob:https://m365.cloud.microsoft/25f18619-5cf9-4d81-8dcc-ba38538d92d0)
+      </div>
+    </div>
+
+
+
+    <!-- PAUSCHBETRÄGE LEBENSMITTEL -->
+    <div class="card">
+      <div class="card-title">Pauschbeträge für Sachentnahmen (Lebensmittel, Bäckerei usw.)</div>
+
+      <p style="font-size:.9rem;">
+        Das BMF veröffentlicht jährlich Pauschbeträge für unentgeltliche Wertabgaben
+        (Lebensmittel, Bäckerei, Fleischerei, Getränkehandel …).  
+        (PDF S. 12–13) [1](blob:https://m365.cloud.microsoft/25f18619-5cf9-4d81-8dcc-ba38538d92d0)
+      </p>
+
+      <div class="merksatz lila">
+        Pauschbeträge ersetzen die Einzelaufzeichnung → monatliche oder jährliche Verbuchung möglich.
+      </div>
+
+      <h4 style="margin-top:1rem;">Beispiel aus dem PDF:</h4>
+
+      <p style="font-size:.9rem;">
+        Familie des Bäckers (zwei Erwachsene, ein Kind 8 Jahre, ein Baby).  
+        Jahreswerte lt. Tabelle ergeben:
+      </p>
+
+      <table class="buch-table">
+        <tr><th>Person</th><th>Nettowert 7 %</th></tr>
+        <tr><td>Bäckermeister</td><td class="betrag">1.537 €</td></tr>
+        <tr><td>Ehefrau</td><td class="betrag">1.537 €</td></tr>
