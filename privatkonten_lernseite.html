@@ -253,6 +253,85 @@ nav button.aktiv-tab{color:#fff;border-bottom-color:#7ee8a2;}
         <div class="konten-box vk">
           <h3>Privateinlagen (SKR04 – Habenseite)</h3>
           <p style="font-size:.9rem;line-height:1.8;">
+             
+• Allgemeine Privateinlagen 2180<br>
+            • Sacheinlagen (Anlage-/Umlaufvermögen)<br>
+            • Nutzungseinlagen (z. B. Privat-Pkw für betriebliche Fahrten)<br>
+            • Bareinlagen (z. B. Einlage in Kasse/Bank)
+          </p>
+        </div>
+
+      </div>
+
+      <div class="merksatz blau">
+        Regel laut PDF: Privatkonten sind reine <strong>Eigenkapital‑Korrekturkonten</strong>,
+        die am Jahresende über das Eigenkapitalkonto abgeschlossen werden.  
+        (PDF Kap. 8.3–8.6) [1](blob:https://m365.cloud.microsoft/25f18619-5cf9-4d81-8dcc-ba38538d92d0)
+      </div>
+    </div>
+
+
+    <!-- Beispiel: Privatentnahme -->
+    <div class="card">
+      <div class="card-title">Beispiel: Privatentnahme (Geld)</div>
+
+      <p style="font-size:.9rem;margin-bottom:1rem;">
+        Der Unternehmer entnimmt <strong>1.000 €</strong> aus der Kasse für private Zwecke.
+        • Kasse sinkt  
+        • Eigenkapital sinkt durch Entnahme  
+        → Buchung über Privatentnahmen 2100
+      </p>
+
+      <table class="buch-table">
+        <tr><th>Soll</th><th>Betrag</th><th>Haben</th></tr>
+        <tr>
+          <td class="soll">Privatentnahmen allgemein 2100</td>
+          <td class="betrag">1.000,00 €</td>
+          <td class="haben">Kasse 1600</td>
+        </tr>
+      </table>
+
+      <div class="merksatz">
+        Geldentnahmen unterliegen <strong>nicht</strong> der Umsatzsteuer.  
+        (PDF Kap. 8.4.2) [1](blob:https://m365.cloud.microsoft/25f18619-5cf9-4d81-8dcc-ba38538d92d0)
+      </div>
+    </div>
+
+
+    <!-- Beispiel: Privateinlage -->
+    <div class="card">
+      <div class="card-title">Beispiel: Privateinlage (Geld)</div>
+
+      <p style="font-size:.9rem;margin-bottom:1rem;">
+        Der Unternehmer zahlt <strong>500 €</strong> aus privatem Vermögen in die Kasse ein.
+        → Kasse steigt, EK steigt (über Privateinlagen 2180).
+      </p>
+
+      <table class="buch-table">
+        <tr><th>Soll</th><th>Betrag</th><th>Haben</th></tr>
+        <tr>
+          <td class="soll">Kasse 1600</td>
+          <td class="betrag">500,00 €</td>
+          <td class="haben">Privateinlagen 2180</td>
+        </tr>
+      </table>
+
+      <div class="merksatz gruen">
+        Privateinlagen erhöhen das Eigenkapital.  
+        (PDF Kap. 8.2) [1](blob:https://m365.cloud.microsoft/25f18619-5cf9-4d81-8dcc-ba38538d92d0)
+      </div>
+    </div>
+
+
+    <!-- Weiter-Button -->
+    <button class="btn-nav" onclick="zeig('entnahmen',document.querySelector('nav button:nth-child(3)'))">
+      Weiter zu: Privatentnahmen →
+    </button>
+
+  </div>
+</div>
+``
+
 <!-- ③ PRIVATENTNAHMEN -->
 <div class="seite" id="seite-entnahmen">
   <div class="container">
@@ -396,3 +475,113 @@ nav button.aktiv-tab{color:#fff;border-bottom-color:#7ee8a2;}
         <tr><th>Person</th><th>Nettowert 7 %</th></tr>
         <tr><td>Bäckermeister</td><td class="betrag">1.537 €</td></tr>
         <tr><td>Ehefrau</td><td class="betrag">1.537 €</td></tr>
+        <tr><td>Kind (8 J.) – 50 %</td><td class="betrag">768 €</td></tr>
+        <tr><td>Kind (0 J.) – entfällt</td><td class="betrag">0 €</td></tr>
+        <tr><td><strong>Summe</strong></td><td class="betrag"><strong>3.842 €</strong></td></tr>
+      </table>
+
+      <h4 style="margin-top:1rem;">Buchung:</h4>
+
+      <table class="buch-table">
+        <tr><th>Soll</th><th>Betrag</th><th>Haben</th></tr>
+        <tr>
+          <td class="soll">Unentgeltliche Wertabgaben 2130</td>
+          <td class="betrag">3.842,00 €</td>
+          <td class="haben">Entnahme Waren 4610 (7 % USt)</td>
+        </tr>
+        <tr>
+          <td class="soll">Unentgeltliche Wertabgaben 2130</td>
+          <td class="betrag">268,94 €</td>
+          <td class="haben">Umsatzsteuer 3801 (7 %)</td>
+        </tr>
+      </table>
+    </div>
+
+
+
+    <!-- NUTZUNGSENTNAHME (allgemein, ohne Pkw) -->
+    <div class="card">
+      <div class="card-title">8.4.4 Nutzungsentnahme – Grundprinzip</div>
+
+      <p style="font-size:.9rem;margin-bottom:1rem;">
+        Nutzungsentnahmen entstehen, wenn betriebliche Gegenstände
+        <strong>für private Zwecke genutzt</strong> werden (z. B. Geräte, Maschinen, Kopierer).
+        → Bewertung mit anteiligen <strong>Selbstkosten</strong>.  
+        (PDF S. 16) [1](blob:https://m365.cloud.microsoft/25f18619-5cf9-4d81-8dcc-ba38538d92d0)
+      </p>
+
+      <h4 style="color:#1a4d2e;margin-top:1rem;">Beispiel (PDF):</h4>
+      <p style="font-size:.9rem;">
+        5.000 Kopien × 0,045 € Selbstkosten = 225 € privat verursachte Kosten.<br>
+        USt = 42,75 € (19 %).  
+        (PDF S. 16–17) [1](blob:https://m365.cloud.microsoft/25f18619-5cf9-4d81-8dcc-ba38538d92d0)
+      </p>
+
+      <table class="buch-table">
+        <tr><th>Soll</th><th>Betrag</th><th>Haben</th></tr>
+        <tr>
+          <td class="soll">Unentgeltliche Wertabgaben 2130</td>
+          <td class="betrag">225,00 €</td>
+          <td class="haben">Verwendung außerhalb Unternehmen 4640</td>
+        </tr>
+        <tr>
+          <td class="soll">Unentgeltliche Wertabgaben 2130</td>
+          <td class="betrag">42,75 €</td>
+          <td class="haben">Umsatzsteuer 3806</td>
+        </tr>
+      </table>
+
+      <div class="merksatz blau">
+        Wenn für die zugrundeliegenden Kosten kein Vorsteuerabzug möglich war  
+        → Nutzungsentnahme <strong>ohne</strong> Umsatzsteuer.  
+        (PDF S. 17–18) [1](blob:https://m365.cloud.microsoft/25f18619-5cf9-4d81-8dcc-ba38538d92d0)
+      </div>
+    </div>
+
+
+
+    <!-- LEISTUNGSENTNAHME -->
+    <div class="card">
+      <div class="card-title">8.4.5 Leistungsentnahme</div>
+
+      <p style="font-size:.9rem;margin-bottom:1rem;">
+        Diese liegt vor, wenn betriebliche Arbeitnehmer private Leistungen für den Unternehmer erbringen
+        (z. B. Gartenarbeit am Privatgrundstück).  
+        Bewertung: <strong>Selbstkosten</strong>.  
+        (PDF S. 30–31) [1](blob:https://m365.cloud.microsoft/25f18619-5cf9-4d81-8dcc-ba38538d92d0)
+      </p>
+
+      <h4 style="color:#1a4d2e;margin-top:1rem;">Beispiel:</h4>
+      <p style="font-size:.9rem;">
+        Renovierung des Privathauses: Selbstkosten 3.250 €  
+        Umsatzsteuer: 617,50 €  
+      </p>
+
+      <table class="buch-table">
+        <tr><th>Soll</th><th>Betrag</th><th>Haben</th></tr>
+        <tr>
+          <td class="soll">Unentgeltliche Wertabgaben 2130</td>
+          <td class="betrag">3.250,00 €</td>
+          <td class="haben">Unentgeltliche sonstige Leistung 4660</td>
+        </tr>
+        <tr>
+          <td class="soll">Unentgeltliche Wertabgaben 2130</td>
+          <td class="betrag">617,50 €</td>
+          <td class="haben">Umsatzsteuer 3806</td>
+        </tr>
+      </table>
+
+      <div class="merksatz rot">
+        Leistungsentnahmen sind immer USt‑pflichtig (sofern Vorsteuerabzug möglich war).  
+        (PDF S. 31) [1](blob:https://m365.cloud.microsoft/25f18619-5cf9-4d81-8dcc-ba38538d92d0)
+      </div>
+    </div>
+
+
+    <!-- Weiter -->
+    <button class="btn-nav" onclick="zeig('nutzungen',document.querySelector('nav button:nth-child(4)'))">
+      Weiter zu: Nutzungsentnahmen inkl. private Pkw‑Nutzung →
+    </button>
+
+  </div>
+</div>
