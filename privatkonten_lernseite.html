@@ -120,3 +120,87 @@ nav button.aktiv-tab{color:#fff;border-bottom-color:#7ee8a2;}
 .merksatz.blau{background:#e8f4fd;border-left-color:#2d7abf;}
 .merksatz.rot{background:#fdedec;border-left-color:#e74c3c;}
 .merksatz.lila{background:#f5f0ff;border-left-color:#8b5cf6;}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <h1>👤 Privatkonten – Interaktive Lernseite</h1>
+  <p>Für Steuerfachangestellte – erstellt auf Basis der Warenverkehr-Vorlage</p>
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+  <button class="aktiv-tab" onclick="zeig('abgrenzung',this)">① Abgrenzung betrieblich / privat</button>
+  <button onclick="zeig('privatkonten',this)">② Privatkonten (SKR04)</button>
+  <button onclick="zeig('entnahmen',this)">③ Privatentnahmen</button>
+  <button onclick="zeig('nutzungen',this)">④ Nutzungsentnahmen (inkl. private Pkw‑Nutzung)</button>
+  <button onclick="zeig('leistungen',this)">⑤ Leistungsentnahmen</button>
+  <button onclick="zeig('einlagen',this)">⑥ Privateinlagen</button>
+  <button onclick="zeig('abschluss',this)">⑦ Abschluss der Privatkonten</button>
+  <button onclick="zeig('bvvergleich',this)">⑧ Betriebsvermögensvergleich</button>
+  <button onclick="zeig('uebungen',this)">⑨ Übungen</button>
+</nav>
+
+<!-- SEITEN-ABSCHNITTE -->
+<!-- Jede Seite wird später als .seite sichtbar/unsichtbar gesteuert -->
+
+<!-- ① ABBRECHNUNG PRIVAT / BETRIEB -->
+<div class="seite sichtbar" id="seite-abgrenzung">
+  <div class="container">
+
+    <div class="card">
+      <div class="card-title">Abgrenzung zwischen betrieblichen und privaten Vorgängen</div>
+      <p style="font-size:.95rem;margin-bottom:1rem;">
+        Im Einzelunternehmen und in Personengesellschaften treten neben betrieblichen Vorgängen
+        auch <strong>Privatvorgänge</strong> des Unternehmers auf.
+        Diese müssen <strong>streng getrennt</strong> werden, um
+        Gewinn und Vermögenslage nicht zu verfälschen.
+      </p>
+
+      <div class="merksatz gruen">
+        Privatvorgänge dürfen den Gewinn <strong>nicht beeinflussen</strong> – sie gehören nicht in die GuV,
+        sondern auf spezielle Privatkonten.
+      </div>
+
+      <div class="konten-grid" style="margin-top:1rem;">
+        <div class="konten-box box-neutral">
+          <h3>✔ Betriebliche Vorgänge</h3>
+          <p>
+            • betreffen das Unternehmen<br>
+            • lösen Aufwand/Ertrag aus<br>
+            • verändern das Betriebsvermögen
+          </p>
+        </div>
+        <div class="konten-box box-warn">
+          <h3>⚠ Private Vorgänge</h3>
+          <p>
+            • betreffen den Unternehmer persönlich<br>
+            • dürfen nicht erfolgswirksam gebucht werden<br>
+            • wirken nur über Privatkonten auf das Eigenkapital
+          </p>
+        </div>
+      </div>
+
+      <h3 style="margin-top:1.4rem;font-size:1rem;color:#1a4d2e;">Typische private Vorgänge</h3>
+      <ul style="padding-left:1.2rem;line-height:1.9;font-size:.9rem;">
+        <li>Entnahme von Geld aus der betrieblichen Kasse</li>
+        <li>Bezahlung privater Rechnungen über das betriebliche Bankkonto</li>
+        <li>Private Fahrten mit dem betrieblichen Pkw</li>
+        <li>Entnahme von Waren oder Leistungen für den privaten Haushalt</li>
+      </ul>
+
+      <div class="merksatz blau">
+        Grundlage: Privatvorgänge müssen laut PDF getrennt vom betrieblichen Bereich erfasst werden,
+        damit GuV und Bilanz unverfälscht bleiben. [1](blob:https://m365.cloud.microsoft/25f18619-5cf9-4d81-8dcc-ba38538d92d0)
+      </div>
+    </div>
+
+    <!-- Weiter-Button zu Kapitel 2 -->
+    <button class="btn-nav" onclick="zeig('privatkonten',document.querySelector('nav button:nth-child(2)'))">
+      Weiter zu: Privatkonten →
+    </button>
+
+  </div>
+</div>
