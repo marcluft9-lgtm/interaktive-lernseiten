@@ -585,3 +585,153 @@ nav button.aktiv-tab{color:#fff;border-bottom-color:#7ee8a2;}
 
   </div>
 </div>
+
+<!-- ④ NUTZUNGSENTNAHMEN (inkl. private Pkw‑Nutzung) -->
+<div class="seite" id="seite-nutzungen">
+  <div class="container">
+
+    <!-- Intro -->
+    <div class="card">
+      <div class="card-title">Private Nutzungsentnahme – Grundsatz</div>
+      <p style="font-size:.95rem;margin-bottom:1rem;">
+        Wird ein betrieblicher Gegenstand (z. B. Pkw, Kopierer) <strong>privat genutzt</strong>,
+        liegt eine <strong>Nutzungsentnahme</strong> vor. Bewertungsgrundlage sind die
+        <strong>anteiligen Selbstkosten</strong> der privaten Nutzung; umsatzsteuerlich handelt es
+        sich um eine <strong>unentgeltliche Wertabgabe</strong> (sofern beim Leistungseingang
+        Vorsteuerabzug möglich war). (PDF 8.4.4) [1](blob:https://m365.cloud.microsoft/25f18619-5cf9-4d81-8dcc-ba38538d92d0)
+      </p>
+      <div class="merksatz gruen">
+        USt-Pflicht besteht nur insoweit, wie für die zugrundeliegenden Aufwendungen
+        <strong>Vorsteuerabzug</strong> möglich war. (PDF 8.4.4) [1](blob:https://m365.cloud.microsoft/25f18619-5cf9-4d81-8dcc-ba38538d92d0)
+      </div>
+    </div>
+
+    <!-- Fahrtenbuchmethode -->
+    <div class="card">
+      <div class="card-title">Privater Pkw – Fahrtenbuchmethode</div>
+
+      <p style="font-size:.92rem;">
+        Bei ordnungsgemäßem Fahrtenbuch wird der **private Nutzungsanteil in %**
+        aus <em>Privat‑km / Gesamt‑km</em> ermittelt. Dieser Prozentsatz wird auf die
+        <strong>gesamten Kfz‑Kosten</strong> des Jahres angewandt. (PDF S. 20–21) [1](blob:https://m365.cloud.microsoft/25f18619-5cf9-4d81-8dcc-ba38538d92d0)
+      </p>
+
+      <div class="kalk-box">
+        <div class="kalk-row"><span class="kalk-label">Privatanteil (%) = private km ÷ gesamt km × 100</span></div>
+        <div class="kalk-row"><span class="kalk-op">→</span><span class="kalk-label">Nutzungsentnahme (netto) = Privatanteil × Jahres‑Kfz‑Kosten</span></div>
+        <div class="kalk-row kalk-sum"><span class="kalk-op">+</span><span class="kalk-label">USt auf den Teil, für den Vorsteuerabzug möglich war</span></div>
+      </div>
+
+      <h4 style="margin-top:1rem;color:#1a4d2e;">Beispiel (Fahrtenbuch vorhanden)</h4>
+      <ul style="font-size:.9rem;line-height:1.9;padding-left:1.2rem;">
+        <li>Gesamt‑km: 42.000; Privat‑km: 7.770 → Privatanteil <strong>18,5 %</strong></li>
+        <li>Jahres‑Kfz‑Kosten netto: <strong>16.800 €</strong></li>
+        <li><strong>Vorsteuerfähiger</strong> Anteil der Kosten: 16.000 €; nicht vorsteuerfähig (Steuer/Versicherung): 800 €</li>
+      </ul>
+      <p style="font-size:.9rem;margin-top:.4rem;">
+        Netto‑Entnahme = 16.800 € × 18,5 % = <strong>3.108,00 €</strong><br>
+        USt‑Grundlage nur aus vorsteuerfähigem Teil: 16.000 € × 18,5 % = <strong>2.960,00 €</strong><br>
+        USt 19 % = <strong>562,40 €</strong> (auf 2.960 €) (PDF S. 21–22) [1](blob:https://m365.cloud.microsoft/25f18619-5cf9-4d81-8dcc-ba38538d92d0)
+      </p>
+
+      <table class="buch-table" style="margin-top:.8rem;">
+        <tr><th>Soll</th><th>Betrag</th><th>Haben</th></tr>
+        <!-- Netto-Entnahme gesamt -->
+        <tr>
+          <td class="soll">Unentgeltliche Wertabgaben 2130</td>
+          <td class="betrag">3.108,00 €</td>
+          <td class="haben">Verwendung außerhalb des Unternehmens 4640 (Pkw‑Nutzung)</td>
+        </tr>
+        <!-- USt nur auf vorsteuerfähigen Teil -->
+        <tr>
+          <td class="soll">Unentgeltliche Wertabgaben 2130</td>
+          <td class="betrag">562,40 €</td>
+          <td class="haben">Umsatzsteuer 3806</td>
+        </tr>
+      </table>
+
+      <div class="merksatz blau">
+        Wichtig: USt fällt **nur** auf den Teil an, für den bei den Kfz‑Kosten
+        Vorsteuerabzug möglich war; Kosten ohne Vorsteuer (z. B. Kfz‑Steuer) bleiben für die
+        USt‑Bemessung außen vor. (PDF S. 21–22) [1](blob:https://m365.cloud.microsoft/25f18619-5cf9-4d81-8dcc-ba38538d92d0)
+      </div>
+    </div>
+
+    <!-- 1%-Regelung -->
+    <div class="card">
+      <div class="card-title">Privater Pkw – 1 %-Regelung (Prozentmethode)</div>
+
+      <p style="font-size:.92rem;">
+        Ohne Fahrtenbuch und bei betrieblicher Nutzung &gt; 50 % darf die **1 %-Regelung**
+        angewandt werden. Jahreswert: <strong>12 % des (auf volle 100 € abgerundeten)
+        Bruttolistenpreises</strong>. (PDF S. 23–24) [1](blob:https://m365.cloud.microsoft/25f18619-5cf9-4d81-8dcc-ba38538d92d0)
+      </p>
+
+      <div class="kalk-box">
+        <div class="kalk-row">
+          <span class="kalk-label">Bruttolistenpreis (abgerundet) × 1 % pro Monat = Monatswert</span>
+        </div>
+        <div class="kalk-row kalk-sum">
+          <span class="kalk-op">×</span><span class="kalk-label">12 Monate = Jahreswert (netto)</span>
+        </div>
+      </div>
+
+      <h4 style="margin-top:1rem;color:#1a4d2e;">Beispiel</h4>
+      <ul style="font-size:.9rem;line-height:1.9;padding-left:1.2rem;">
+        <li>Bruttolistenpreis: 27.550 € → Abrundung: 27.500 €</li>
+        <li>Monatswert: 27.500 € × 1 % = 275 € → Jahreswert: 3.300 €</li>
+      </ul>
+
+      <p style="font-size:.9rem;margin-top:.4rem;">
+        **USt‑Sonderregel:** Nur <strong>80 %</strong> dieses pauschalen Jahreswertes unterliegt der USt,
+        <strong>20 %</strong> bleiben umsatzsteuerfrei. (PDF S. 24–25) [1](blob:https://m365.cloud.microsoft/25f18619-5cf9-4d81-8dcc-ba38538d92d0)
+      </p>
+
+      <table class="buch-table" style="margin-top:.8rem;">
+        <tr><th>Soll</th><th>Betrag</th><th>Haben</th></tr>
+        <!-- 80 % USt-pflichtig -->
+        <tr>
+          <td class="soll">Unentgeltliche Wertabgaben 2130</td>
+          <td class="betrag">2.640,00 €</td>
+          <td class="haben">Verwendung außerhalb des Unternehmens 4645 (Pkw 19 %)</td>
+        </tr>
+        <!-- 20 % ohne USt -->
+        <tr>
+          <td class="soll">Unentgeltliche Wertabgaben 2130</td>
+          <td class="betrag">660,00 €</td>
+          <td class="haben">Verwendung außerhalb des Unternehmens 4639 (ohne USt)</td>
+        </tr>
+        <!-- USt auf 80 % -->
+        <tr>
+          <td class="soll">Unentgeltliche Wertabgaben 2130</td>
+          <td class="betrag">501,60 €</td>
+          <td class="haben">Umsatzsteuer 3806</td>
+        </tr>
+      </table>
+
+      <div class="merksatz">
+        **Achtung Elektro-/Hybridfahrzeuge (EStG‑Sonderregeln):**  
+        Ertragsteuerliche Begünstigungen (½ oder ¼ Ansatz) betreffen **nicht** die USt‑Bemessungsgrundlage.  
+        (PDF S. 22, 25) [1](blob:https://m365.cloud.microsoft/25f18619-5cf9-4d81-8dcc-ba38538d92d0)
+      </div>
+    </div>
+
+    <!-- Telefon-Hinweis (Abgrenzung zur USt-Fiktion bei Geräten) -->
+    <div class="card">
+      <div class="card-title">Abgrenzung: Telefonkosten</div>
+      <p style="font-size:.9rem;">
+        Laufende Telefongebühren werden beim Rechnungseingang in betrieblich/privat aufgeteilt:
+        nur der betriebliche Anteil mit Vorsteuerabzug. Der private Anteil (brutto) ist
+        <strong>Privatentnahme 2100</strong>. Bei Geräten (z. B. Telefonanlage) kann die
+        private Nutzung als Nutzungsentnahme uSt‑pflichtig sein. (PDF S. 26–29) [1](blob:https://m365.cloud.microsoft/25f18619-5cf9-4d81-8dcc-ba38538d92d0)
+      </p>
+    </div>
+
+    <!-- Weiter -->
+    <button class="btn-nav" onclick="zeig('leistungen',document.querySelector('nav button:nth-child(5)'))">
+      Weiter zu: Leistungsentnahmen →
+    </button>
+
+  </div>
+</div>
+``
